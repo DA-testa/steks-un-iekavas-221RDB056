@@ -27,8 +27,10 @@ def find_mismatch(text):
     return  opening_brackets_stack[0].position
 
 def main():
-    text = input()
-    mismatch = find_mismatch(text)
+    input_type = input()
+    if input_type.__contains__("I"):
+        text = input()
+        mismatch = find_mismatch(text)
     # Printing answer, write your code here
     print(mismatch)
 
